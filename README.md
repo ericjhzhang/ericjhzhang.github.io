@@ -1,4 +1,4 @@
-</> Markdown
+</> HTML
 
 <img src="photo.JPG"
      alt="Eric Zhang"
