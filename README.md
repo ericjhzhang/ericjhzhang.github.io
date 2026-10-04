@@ -1,4 +1,4 @@
-</> HTML
+</> Markdown
 
 <img src="photo.JPG"
      alt="Eric Zhang"
@@ -13,4 +13,4 @@ I work in noncommutative algebra and homological algebra, with a focus on simpli
 
 Email: zhangj20@uw.edu
 
-Office: Pedalford Hall C-38.
+Office: Padelford Hall C-38.
