@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Math 411 | Eric Zhang</title>
+  <style>
+    :root {
+      --accent: #1565c0;
+      --text: #222;
+      --muted: #666;
+      --border: #e5e5e5;
+      --soft: #f7f9fc;
+    }
+    * { box-sizing: border-box; }
+    body {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 30px 50px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 18px;
+      line-height: 1.6;
+      color: var(--text);
+      background: #fff;
+    }
+    header { padding-top: 28px; margin-bottom: 38px; }
+    nav {
+      display: flex;
+      gap: 28px;
+      flex-wrap: wrap;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 14px;
+    }
+    nav a {
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+      font-size: 15px;
+    }
+    nav a:hover, nav a.active { color: var(--accent); }
+    h1 { font-size: 38px; line-height: 1.2; margin: 0 0 8px; font-weight: 600; }
+    h2 { font-size: 25px; margin-top: 38px; margin-bottom: 14px; font-weight: 600; }
+    h3 { font-size: 19px; margin-top: 24px; margin-bottom: 8px; font-weight: 600; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .course-meta { color: var(--muted); margin-top: 0; margin-bottom: 18px; }
+    .resource-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 18px;
+      margin: 18px 0 8px;
+      padding: 12px 16px;
+      background: var(--soft);
+      border-radius: 6px;
+    }
+    .resource-nav a { font-size: 16px; }
+    .resource-list { padding-left: 24px; }
+    .resource-list li { margin-bottom: 8px; }
+    .resource-date {
+      color: var(--muted);
+      display: inline-block;
+      min-width: 108px;
+      margin-right: 8px;
+      white-space: nowrap;
+    }
+    .small-note { color: var(--muted); font-size: 16px; margin-top: -5px; }
+    .back-link { margin-top: 42px; padding-top: 18px; border-top: 1px solid var(--border); }
+    @media (max-width: 650px) {
+      body { padding: 0 20px 40px; font-size: 17px; }
+      header { margin-bottom: 28px; }
+      nav { gap: 16px 22px; }
+      h1 { font-size: 32px; }
+      h2 { font-size: 23px; }
+      .resource-date { display: block; min-width: 0; }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <nav>
+    <a href="../index.html">ABOUT</a>
+    <a href="../research.html">RESEARCH</a>
+    <a class="active" href="../teaching.html">TEACHING</a>
+  </nav>
+</header>
+<main>
+  <h1>Math 411: Introduction to Modern Algebra with Applications</h1>
+  <p class="course-meta">University of Washington · Summer 2025 · Instructor: Eric Zhang</p>
+
+  <div class="resource-nav">
+    <a href="#syllabus">Syllabus</a>
+    <a href="#notes">Lecture Notes</a>
+    <a href="#homeworks">Homeworks</a>
+    <a href="#exams">Exams &amp; Reviews</a>
+  </div>
+
+  <h2 id="syllabus">Syllabus</h2>
+  <ul class="resource-list">
+    <li><a href="syllabus/Syllabus_Course%20Info_%20ARCHIVED_%20MATH%20411%20A%20Su%2025_%20Introduction%20To%20Modern%20Algebra%20With%20Applications%20I.pdf" target="_blank" rel="noopener">Math 411 A — Summer 2025 Syllabus (PDF)</a></li>
+  </ul>
+
+  <h2 id="notes">Lecture Notes</h2>
+  <p class="small-note">Listed chronologically by class date.</p>
+  <ol class="resource-list">
+      <li><span class="resource-date">June 23</span><a href="notes/Jun%2023%20Division%20Algorithm.pdf" target="_blank" rel="noopener">Division Algorithm</a></li>
+      <li><span class="resource-date">June 25</span><a href="notes/Jun%2025%20Euclidean%20Algorithm%20and%20gcd.pdf" target="_blank" rel="noopener">Euclidean Algorithm and gcd</a></li>
+      <li><span class="resource-date">June 27</span><a href="notes/Jun%2027%20Congruence.pdf" target="_blank" rel="noopener">Congruence</a></li>
+      <li><span class="resource-date">June 30</span><a href="notes/June%2030%20Prime%20and%20FTA.pdf" target="_blank" rel="noopener">Prime and FTA</a></li>
+      <li><span class="resource-date">July 2</span><a href="notes/July%202%20Review%20I.pdf" target="_blank" rel="noopener">Review I</a></li>
+      <li><span class="resource-date">July 7</span><a href="notes/July%207%20Groups%20and%20Rings.pdf" target="_blank" rel="noopener">Groups and Rings</a></li>
+      <li><span class="resource-date">July 9</span><a href="notes/July%209%20More%20on%20Groups%20and%20Rings.pdf" target="_blank" rel="noopener">More on Groups and Rings</a></li>
+      <li><span class="resource-date">July 11</span><a href="notes/July%2011%20Unit%20Groups.pdf" target="_blank" rel="noopener">Unit Groups</a></li>
+      <li><span class="resource-date">July 14</span><a href="notes/July%2014%20Ideals.pdf" target="_blank" rel="noopener">Ideals</a></li>
+      <li><span class="resource-date">July 16</span><a href="notes/July%2016%20Domains.pdf" target="_blank" rel="noopener">Domains</a></li>
+      <li><span class="resource-date">July 25</span><a href="notes/July%2025%20Polynomial%20Rings.pdf" target="_blank" rel="noopener">Polynomial Rings</a></li>
+      <li><span class="resource-date">July 28</span><a href="notes/July%2028%20k%5Bx%5D%20is%20ED.pdf" target="_blank" rel="noopener">k[x] is ED</a></li>
+      <li><span class="resource-date">July 30</span><a href="notes/July%2030%20Root%20Of%20Polynomial.pdf" target="_blank" rel="noopener">Root of Polynomial</a></li>
+      <li><span class="resource-date">August 1</span><a href="notes/August%201%20Polynomial%20Over%20A%20Ring.pdf" target="_blank" rel="noopener">Polynomial Over a Ring</a></li>
+      <li><span class="resource-date">August 4</span><a href="notes/August%204%20Gauss%20Lemma.pdf" target="_blank" rel="noopener">Gauss Lemma</a></li>
+      <li><span class="resource-date">August 6</span><a href="notes/August%206%20Irreducibles%20In%20Z%5Bx%5D.pdf" target="_blank" rel="noopener">Irreducibles in Z[x]</a></li>
+      <li><span class="resource-date">August 8</span><a href="notes/August%208%20Eisenstein%20Criteria.pdf" target="_blank" rel="noopener">Eisenstein Criteria</a></li>
+      <li><span class="resource-date">August 11</span><a href="notes/August%2011%20Reduction%20Mod%20P.pdf" target="_blank" rel="noopener">Reduction Mod P</a></li>
+      <li><span class="resource-date">August 13</span><a href="notes/August%2013%20Polynomial%20Congruence.pdf" target="_blank" rel="noopener">Polynomial Congruence</a></li>
+      <li><span class="resource-date">August 15</span><a href="notes/August%2015%20Gaussian%20Integers%20Revisited.pdf" target="_blank" rel="noopener">Gaussian Integers Revisited</a></li>
+      <li><span class="resource-date">August 18</span><a href="notes/Aug%2018%20Review%20I.pdf" target="_blank" rel="noopener">Review I</a></li>
+      <li><span class="resource-date">August 20</span><a href="notes/Aug%2020%20Homework_review.pdf" target="_blank" rel="noopener">Homework Review</a></li>
+  </ol>
+
+  <h3>Additional Notes and Corrections</h3>
+  <ul class="resource-list">
+      <li><a href="notes/Euclidean_domain_correction_on_notes.pdf" target="_blank" rel="noopener">Euclidean Domain — Correction to Notes</a></li>
+      <li><a href="notes/when_the_polynomial_congruence_is_a_field.pdf" target="_blank" rel="noopener">When the Polynomial Congruence Is a Field</a></li>
+  </ul>
+
+  <h2 id="homeworks">Homeworks</h2>
+  <ul class="resource-list">
+      <li><a href="homeworks/Math_411_Homework_1.pdf" target="_blank" rel="noopener">Homework 1</a></li>
+      <li><a href="homeworks/Math_411_Homework_2.pdf" target="_blank" rel="noopener">Homework 2</a></li>
+      <li><a href="homeworks/Math_411_Homework_3.pdf" target="_blank" rel="noopener">Homework 3</a></li>
+      <li><a href="homeworks/Math_411_Homework_4.pdf" target="_blank" rel="noopener">Homework 4</a></li>
+      <li><a href="homeworks/Math_411_Homework_5.pdf" target="_blank" rel="noopener">Homework 5</a></li>
+      <li><a href="homeworks/Math_411_Homework_6.pdf" target="_blank" rel="noopener">Homework 6</a></li>
+      <li><a href="homeworks/Math_411_Homework_7.pdf" target="_blank" rel="noopener">Homework 7</a></li>
+      <li><a href="homeworks/Math_411_Homework_8.pdf" target="_blank" rel="noopener">Homework 8</a></li>
+      <li><a href="homeworks/Math_411_Homework_review.pdf" target="_blank" rel="noopener">Homework Review</a></li>
+  </ul>
+
+  <h2 id="exams">Exams and Reviews</h2>
+  <ul class="resource-list">
+      <li><a href="exams/Math_411_Midterm_1_Review.pdf" target="_blank" rel="noopener">Midterm 1 Review</a></li>
+      <li><a href="exams/Math_411_Midterm_1_final_ver.pdf" target="_blank" rel="noopener">Midterm 1</a></li>
+      <li><a href="exams/Math_411_Midterm_2_practice.pdf" target="_blank" rel="noopener">Midterm 2 Practice</a></li>
+      <li><a href="exams/Math_411_Midterm_2_final_ver_reduced.pdf" target="_blank" rel="noopener">Midterm 2</a></li>
+  </ul>
+
+  <p class="back-link"><a href="../teaching.html">← Back to Teaching</a></p>
+</main>
+</body>
+</html>
