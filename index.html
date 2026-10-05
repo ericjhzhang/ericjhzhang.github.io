@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eric Zhang</title>
+
+  <style>
+    :root {
+      --accent: #1565c0;
+      --text: #222;
+      --muted: #666;
+      --border: #e5e5e5;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 30px 50px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 18px;
+      line-height: 1.6;
+      color: var(--text);
+      background: #fff;
+    }
+
+    header {
+      padding-top: 28px;
+      margin-bottom: 38px;
+    }
+
+    nav {
+      display: flex;
+      gap: 28px;
+      flex-wrap: wrap;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 14px;
+    }
+
+    nav a {
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+      font-size: 15px;
+    }
+
+    nav a:hover,
+    nav a.active {
+      color: var(--accent);
+    }
+
+    h1 {
+      font-size: 38px;
+      line-height: 1.2;
+      margin: 0 0 24px;
+      font-weight: 600;
+    }
+
+    h2 {
+      font-size: 26px;
+      margin-top: 36px;
+      margin-bottom: 12px;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .profile-photo {
+      float: right;
+      width: 220px;
+      max-width: 32%;
+      height: auto;
+      margin-left: 32px;
+      margin-bottom: 20px;
+    }
+
+    .content::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    ul {
+      padding-left: 24px;
+    }
+
+    @media (max-width: 650px) {
+      body {
+        padding: 0 20px 40px;
+        font-size: 17px;
+      }
+
+      header {
+        margin-bottom: 28px;
+      }
+
+      nav {
+        gap: 16px 22px;
+      }
+
+      .profile-photo {
+        float: none;
+        display: block;
+        width: 190px;
+        max-width: 70%;
+        margin: 0 auto 28px;
+      }
+
+      h1 {
+        font-size: 32px;
+      }
+    }
+  </style>
+
+</head>
+<body>
+
+<header>
+  <nav>
+    <a class="active" href="index.html">ABOUT</a>
+    <a href="research.html">RESEARCH</a>
+    <a href="teaching.html">TEACHING</a>
+  </nav>
+</header>
+
+<main class="content">
+  <img src="photo.JPG" alt="Eric Zhang" class="profile-photo">
+
+  <h1>Eric Zhang</h1>
+
+  <p>
+    Hi! My name is Eric Zhang. I am a graduate student at
+    <a href="https://www.washington.edu/" target="_blank" rel="noopener">University of Washington</a>.
+    My advisor is Prof.
+    <a href="https://sites.math.washington.edu/~zhang/" target="_blank" rel="noopener">James Zhang</a>.
+  </p>
+
+  <p>
+    I work in noncommutative algebra and homological algebra, with a focus on simplicial algebras.
+    In particular, I study how simplicial structure interacts with classical algebraic notions
+    such as simplicity, separability, and Morita equivalence.
+  </p>
+
+  <p>
+    Email: <a href="mailto:zhangj20@uw.edu">zhangj20@uw.edu</a>
+  </p>
+
+  <p>
+    Office: Padelford Hall C-38.
+  </p>
+</main>
+</body>
+</html>
